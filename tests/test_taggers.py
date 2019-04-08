@@ -5,7 +5,7 @@ import logging
 from nose.tools import *  # PEP8 asserts
 
 from text.blob import TextBlob
-from textblob_fr import PatternTagger
+from textblob_nl import PatternTagger
 
 
 class TestPatternTagger(unittest.TestCase):

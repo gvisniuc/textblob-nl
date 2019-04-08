@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""French sentiment analysis implementations.
+"""Dutch sentiment analysis implementations.
 """
 from __future__ import absolute_import
 from textblob.base import BaseSentimentAnalyzer, CONTINUOUS
-from textblob_fr.fr import sentiment as pattern_sentiment
+from textblob_nl.nl import sentiment as pattern_sentiment
 
 
 class PatternAnalyzer(BaseSentimentAnalyzer):

@@ -4,12 +4,12 @@ import unittest
 from nose.tools import *  # PEP8 asserts
 
 from text.blob import TextBlob
-from textblob_fr import PatternAnalyzer as FrAnalyzer
+from textblob_nl import PatternAnalyzer as NlAnalyzer
 
 class TestPatternAnalyzer(unittest.TestCase):
 
     def setUp(self):
-        self.analyzer = FrAnalyzer()
+        self.analyzer = NlAnalyzer()
         self.neg = u"C'est une voiture terribles."
         self.pos = u"Quelle belle matinée!"
 

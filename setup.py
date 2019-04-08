@@ -3,7 +3,7 @@ import subprocess
 import re
 from setuptools import setup
 
-packages = ['textblob_fr']
+packages = ['textblob_nl']
 requires = ["textblob>=0.8.0"]
 
 PUBLISH_CMD = "python setup.py register sdist bdist_wheel upload"
@@ -27,7 +27,7 @@ def find_version(fname):
         raise RuntimeError('Cannot find version information')
     return version
 
-__version__ = find_version("textblob_fr/__init__.py")
+__version__ = find_version("textblob_nl/__init__.py")
 
 if 'publish' in sys.argv:
     try:
@@ -64,24 +64,31 @@ def read(fname):
     return content
 
 setup(
-    name='textblob-fr',
+    name='textblob-nl',
     version=__version__,
-    description='French language support for TextBlob.',
+    description='Dutch language support for TextBlob.',
+    long_description_content_type='text/x-rst',
     long_description=(read("README.rst") + '\n\n' +
                         read("HISTORY.rst")),
-    author='Steven Loria',
-    author_email='sloria1@gmail.com',
-    url='https://github.com/sloria/textblob-fr',
+    author='George Visniuc',
+    author_email='georgevisniuc@gmail.com',
+    url='https://github.com/gvisniuc/textblob-nl',
     packages=packages,
-    package_dir={'textblob_fr': 'textblob_fr'},
+    package_dir={'textblob_nl': 'textblob_nl'},
     include_package_data=True,
     package_data={
-        "textblob_fr": ["*.txt", "*.xml"]
+        "textblob_nl": ["*.txt", "*.xml"]
     },
     install_requires=requires,
     license=read("LICENSE"),
     zip_safe=False,
-    keywords='textblob_fr',
+    keywords=[
+        'textblob',
+        'textblob_nl',
+        'nlp',
+        'linguistics',
+        'nltk',
+        'pattern'],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

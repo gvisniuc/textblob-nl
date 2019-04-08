@@ -2,7 +2,7 @@
 from __future__ import absolute_import
 
 from textblob.base import BaseTagger
-from textblob_fr.fr import tag as pattern_tag
+from textblob_nl.nl import tag as pattern_tag
 
 
 class PatternTagger(BaseTagger):
