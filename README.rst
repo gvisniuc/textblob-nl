@@ -34,6 +34,7 @@ Usage
     >>> from textblob import TextBlob
     >>> from textblob_nl import PatternTagger, PatternAnalyzer
     >>> text = u"De kat wil wel vis eten maar geen poot nat maken."
+    >>> blob = TextBlob(text, pos_tagger=PatternTagger(), analyzer=PatternAnalyzer())
     >>> blob.sentiment
     (-0.1, 0.4)
 
